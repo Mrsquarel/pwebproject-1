@@ -1,0 +1,101 @@
+
+html{
+  scroll-behavior: smooth;
+ 
+}
+.title{
+  padding-left: 10%;
+  width: 70vw;
+}
+body{
+   
+  padding-left: 2%;
+  width: 70vw;
+  margin-right: 30%;
+  float: left;
+  background-color:beige;
+}
+.navbar{
+  display: flex;
+  width: 100vw; 
+ 
+}
+
+.imgs  {
+  width: 28%;
+  position :absolute;
+  right: 0;
+  top: 20%;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-left: 1px solid #ddd;
+  height: 100%;
+  overflow-y: auto;
+  background-color: beige;
+}
+.imgs img {
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+h1{
+  font-family:'Courier New', Courier, monospace;
+  font-size: 60px;
+  font-weight: bold;
+}
+h2{
+  font-family: 'Courier New', Courier, monospace;
+  font-size:  40px; ;
+  font-weight: bold;
+}
+h3{
+  font-family: 'Courier New', Courier, monospace;
+  font-size:  25px; ;
+  font-weight: bold;
+}
+p,li{
+  font-size: 16px;
+  font-family: 'Lucida', monospace;
+}
+.title{
+  color: saddlebrown;
+  
+}
+
+.container{
+  display: flex;
+
+justify-content: center;  
+    align-items: center;  
+    padding-bottom: 50px;    
+   
+}
+.aside{
+  text-align: center;
+  margin-left: 20%;
+}
+.presentation{
+  font-family: 'Courier New', Courier, monospace;
+  font-size:  40px; ;
+  font-weight: bold;
+
+}
+.iframeText{
+  text-align: center; /* Centrer le texte sous l'iframe */
+      margin-top: 10px; /* Espace au-dessus du texte */
+      font-size: 16px; /* Taille du texte */
+      color: #333; /* Couleur du texte */
+}
+.iframecontainer{
+  margin-bottom: 20px;
+  display: block; 
+  margin: 0 auto; 
+}
+
+
+  
+
+
+
+
