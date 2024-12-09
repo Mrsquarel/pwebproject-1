@@ -1,100 +1,190 @@
+:root {
+    --parchment: #F4E4BC;
+    --aged-gold: #C5A572;
+    --ancient-red: #8B4513;
+    --worn-blue: #2B4B6F;
+}
 
-html{
+html {
   scroll-behavior: smooth;
- 
 }
-.title{
-  padding-left: 10%;
-  width: 70vw;
-}
-body{
-   
+
+body {
+  background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url('image/Monastir-tunisia.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: 'Cinzel', serif;
   padding-left: 2%;
   width: 70vw;
   margin-right: 30%;
   float: left;
-  background-color:beige;
-}
-.navbar{
-  display: flex;
-  width: 100vw; 
- 
+  color: var(--parchment);
 }
 
-.imgs  {
+.title {
+  padding-left: 10%;
+  width: 70vw;
+  color: var(--aged-gold);
+  text-shadow: 0 0 5px #999;
+}
+
+.navbar {
+  display: flex;
+  width: 100vw;
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  z-index: 100;
+  border-bottom: 2px solid var(--aged-gold);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+  font-size: 18px;
+  color: var(--aged-gold);
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+  position: relative;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: beige;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--parchment);
+}
+
+.imgs {
   width: 28%;
-  position :absolute;
+  position: absolute;
   right: 0;
   top: 20%;
-  padding: 10px;
-  background-color: #f9f9f9;
-  border-left: 1px solid #ddd;
+  padding: 20px;
+  background-color: rgba(43, 75, 111, 0.2);
+  border-left: 2px solid var(--aged-gold);
   height: 100%;
   overflow-y: auto;
-  background-color: beige;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
 }
+
 .imgs img {
   width: 100%;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
+  border: 2px solid var(--aged-gold);
   border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
 }
-h1{
-  font-family:'Courier New', Courier, monospace;
+
+.imgs img:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  font-family: 'Cinzel Decorative', cursive;
   font-size: 60px;
   font-weight: bold;
+  color: var(--aged-gold);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  margin-bottom: 30px;
 }
-h2{
-  font-family: 'Courier New', Courier, monospace;
-  font-size:  40px; ;
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--aged-gold), transparent);
+}
+
+h2, h3 {
+  font-family: 'Cinzel', serif;
   font-weight: bold;
+  color: var(--aged-gold);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
-h3{
-  font-family: 'Courier New', Courier, monospace;
-  font-size:  25px; ;
-  font-weight: bold;
+
+h2 {
+  font-size: 40px;
 }
-p,li{
+
+h3 {
+  font-size: 25px;
+}
+
+p, li {
   font-size: 16px;
-  font-family: 'Lucida', monospace;
-}
-.title{
-  color: saddlebrown;
-  
+  font-family: 'Cinzel', serif;
+  color: #fff;
+  text-shadow: 0 0 5px #999;
 }
 
-.container{
+.container {
   display: flex;
-
-justify-content: center;  
-    align-items: center;  
-    padding-bottom: 50px;    
-   
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
 }
-.aside{
+
+.aside {
   text-align: center;
   margin-left: 20%;
+  background: rgba(43, 75, 111, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid var(--aged-gold);
+  margin-top: 30px;
 }
-.presentation{
-  font-family: 'Courier New', Courier, monospace;
-  font-size:  40px; ;
+
+.presentation {
+  font-family: 'Cinzel', serif;
+  font-size: 40px;
   font-weight: bold;
+}
 
+.iframeText {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
 }
-.iframeText{
-  text-align: center; /* Centrer le texte sous l'iframe */
-      margin-top: 10px; /* Espace au-dessus du texte */
-      font-size: 16px; /* Taille du texte */
-      color: #333; /* Couleur du texte */
-}
-.iframecontainer{
+
+.iframecontainer {
   margin-bottom: 20px;
-  display: block; 
-  margin: 0 auto; 
+  display: block;
+  margin: 0 auto;
+  border: 2px solid var(--aged-gold);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 
-  
+
 
 
 
