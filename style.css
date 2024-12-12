@@ -26,18 +26,6 @@ body {
     font-family: 'Cinzel', serif;
 }
 
-headerclass {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 50px;
-     background-color: rgb(0, 2, 128);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
 
 .logo {
     display: flex;
@@ -140,7 +128,6 @@ button{
     background: var(--aged-gold);
     border: 1px solid var(--parchment);
     border-radius: 20px;
-    outline: none;
     margin-top: 30px;
     font-family: 'Cinzel', serif;
     text-transform: uppercase;
@@ -157,7 +144,6 @@ button:hover {
     height: 250px;
     margin: 0;
     background-color: rgba(0, 2, 128, 0.1);
-    backdrop-filter: blur(5px);
     border: 1px solid var(--aged-gold);
     width: 300px;
     height: 230px;display: block;
@@ -225,7 +211,6 @@ h5{
     background: rgba(43, 75, 111, 0.2);
     border: 2px solid var(--aged-gold);
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -322,4 +307,71 @@ h5{
     background: var(--aged-gold);
     color: #000;
     transform: translateY(-2px);
+}
+
+@media (max-width: 1200px) {
+  .col1 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar a {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .row {
+    padding: 40px 0;
+    flex-direction: column;
+  }
+  .col {
+    padding: 0 20px;
+  }
+  .history-table {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 24px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+  .navbar a {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 12px;
+  }
+  button {
+    width: 150px;
+    font-size: 10px;
+  }
+  .history-table th, .history-table td {
+    padding: 10px;
+    font-size: 12px;
+  }
 }
