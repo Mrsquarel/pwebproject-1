@@ -28,6 +28,9 @@ body {
   width: 70vw;
   color: var(--aged-gold);
   text-shadow: 0 0 5px #999;
+  font-family: 'Cinzel Decorative', cursive;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .navbar {
@@ -44,7 +47,7 @@ body {
 
 .navbar a {
   font-size: 18px;
-  color: var(--aged-gold);
+  color: var(--aged-gold);  
   font-weight: 500;
   text-decoration: none;
   margin-left: 40px;
@@ -52,6 +55,7 @@ body {
   font-family: 'Cinzel', serif;
   letter-spacing: 1px;
   transition: color 0.3s ease;
+  text-transform: uppercase;
 }
 
 .navbar a::before {
@@ -126,6 +130,8 @@ h2, h3 {
   font-weight: bold;
   color: var(--aged-gold);
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 h2 {
@@ -141,6 +147,7 @@ p, li {
   font-family: 'Cinzel', serif;
   color: #fff;
   text-shadow: 0 0 5px #999;
+  letter-spacing: 0.5px;
 }
 
 .container {
@@ -161,9 +168,11 @@ p, li {
 }
 
 .presentation {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cinzel Decorative', cursive;
   font-size: 40px;
   font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .iframeText {
@@ -243,6 +252,7 @@ p, li {
   }
   .navbar a {
     font-size: 16px;
+    letter-spacing: 0.5px;
   }
   h1 {
     font-size: 40px;

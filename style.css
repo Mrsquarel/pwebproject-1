@@ -65,6 +65,22 @@ body {
     width: 100%;
     transition: width 0.3s ease;
 }
+
+.navbar a::after {
+    content: '→';
+    opacity: 0;
+    margin-left: 5px;
+    transition: opacity 0.3s ease;
+}
+
+.navbar a:hover::after {
+    opacity: 1;
+}
+
+.navbar a:first-child {
+    margin-left: 100px;
+}
+
 .row{
     min-height: 100vh;
     padding: 80px 0;
@@ -113,6 +129,11 @@ h1::after {
     background: linear-gradient(90deg, transparent, var(--aged-gold), transparent);
 }
 
+h1 ~ p {
+    color: var(--parchment);
+    margin-bottom: 15px;
+}
+
 p{
     color: #fff;
     font-size: 13px;
@@ -120,6 +141,12 @@ p{
     
     text-shadow: 0 0 5px #999;
 }
+
+h2 + p {
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
 button{
     width: 180px;
     color: #000;
@@ -172,6 +199,11 @@ button:hover {
 .card:hover{
     transform:translateY(-10px)
 }
+
+.card:not(:last-child) {
+    margin-bottom: 20px;
+}
+
 h5{
     color:#000;
     text-shadow: 0 0 5px #999;
@@ -181,6 +213,13 @@ h5{
     text-shadow: 0 0 5px #000;
     font-size: 10px;
 }
+
+.card p::first-letter {
+    font-size: 120%;
+    font-weight: bold;
+    color: var(--aged-gold);
+}
+
 @media (max-width: 768px) {
     .row {
         padding: 40px 0;
@@ -223,6 +262,14 @@ h5{
     font-size: 14px;
 }
 
+.history-table tr td {
+    padding: 20px;
+    text-align: left;
+    border: 1px solid rgba(245, 245, 220, 0.2);
+    color: var(--parchment);
+    font-size: 14px;
+}
+
 .history-table th {
     background: var(--worn-blue);
     color: var(--parchment);
@@ -236,6 +283,10 @@ h5{
 .history-table tr:hover {
     background: rgba(245, 245, 220, 0.1);
     transition: all 0.3s ease;
+}
+
+.history-table tr:nth-child(even) {
+    background: rgba(43, 75, 111, 0.1);
 }
 
 .history-table a {
@@ -303,10 +354,23 @@ h5{
     font-family: 'Cinzel', serif;
 }
 
+.footer .footer-links a {
+    color: var(--parchment);
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid var(--aged-gold);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
 .footer-links a:hover {
     background: var(--aged-gold);
     color: #000;
     transform: translateY(-2px);
+}
+
+.footer-links a:last-child {
+    margin-right: 0;
 }
 
 @media (max-width: 1200px) {
@@ -374,4 +438,13 @@ h5{
     padding: 10px;
     font-size: 12px;
   }
+}
+
+.title, .logo, h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+:target {
+    scroll-margin-top: 80px;
 }
