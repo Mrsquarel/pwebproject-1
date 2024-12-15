@@ -16,7 +16,6 @@ body {
   background-size: cover;
   min-height: 100vh;
   font-family: 'Cinzel', serif; 
-  padding-left: 2%;
   width: 70vw;
   margin-right: 30%;
   float: left;
@@ -41,7 +40,7 @@ body {
   background-color: transparent;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 20px 80px;
   z-index: 100;
   border-bottom: 2px solid var(--aged-gold);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
@@ -78,7 +77,40 @@ body {
 }
 
 .navbar a:hover {
-  color: var(--parchment);
+  color: white;
+  
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #C5A572; ;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: transparent;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover > a {
+  background-color: #575757;
 }
 
 .imgs {
@@ -86,7 +118,7 @@ body {
   width: 28%;
   position: absolute;
   right: 0;
-  top: 20%;
+  top: 65%;
   padding: 20px;
   border-left: 2px solid var(--aged-gold);
   height: 100%;
@@ -160,12 +192,7 @@ p, li {
   letter-spacing: 0.5px;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 50px;
-}
+
 
 .aside {
   text-align: center;
