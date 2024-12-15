@@ -263,7 +263,7 @@ h5{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 2, 128, 0.2));
 }
 
-.history-table {
+#history-table {
     margin: 0 auto;
     max-width: 1200px;
     width: 80%;
@@ -275,8 +275,8 @@ h5{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.history-table th,
-.history-table td {
+#history-table th,
+#history-table td {
     padding: 20px;
     text-align: left;
     border: 1px solid rgba(245, 245, 220, 0.2);
@@ -284,7 +284,7 @@ h5{
     font-size: 14px;
 }
 
-.history-table tr td {
+#history-table tr td {
     padding: 20px;
     text-align: left;
     border: 1px solid rgba(245, 245, 220, 0.2);
@@ -292,7 +292,7 @@ h5{
     font-size: 14px;
 }
 
-.history-table th {
+#history-table th {
     background: var(--worn-blue);
     color: var(--parchment);
     font-family: 'Cinzel', serif;
@@ -302,22 +302,22 @@ h5{
     text-shadow: 0 0 5px #999;
 }
 
-.history-table tr:hover {
+#history-table tr:hover {
     background: rgba(245, 245, 220, 0.1);
     transition: all 0.3s ease;
 }
 
-.history-table tr:nth-child(even) {
+#history-table tr:nth-child(even) {
     background: rgba(43, 75, 111, 0.1);
 }
 
-.history-table a {
+#history-table a {
     color: beige;
     text-decoration: none;
     position: relative;
 }
 
-.history-table a::before {
+#history-table a::before {
     content: '';
     position: absolute;
     left: 0;
@@ -328,7 +328,7 @@ h5{
     transition: width 0.3s ease;
 }
 
-.history-table a:hover::before {
+#history-table a:hover::before {
     width: 100%;
 }
 
@@ -456,7 +456,7 @@ h5{
     width: 150px;
     font-size: 10px;
   }
-  .history-table th, .history-table td {
+  #history-table th, #history-table td {
     padding: 10px;
     font-size: 12px;
   }
