@@ -31,9 +31,11 @@ body {
   font-family: 'Cinzel Decorative', cursive;
   text-transform: uppercase;
   letter-spacing: 2px;
+  
 }
 
 .navbar {
+  color: var(--aged-gold);  
   display: flex;
   width: 100vw;
   background-color: transparent;
@@ -43,6 +45,7 @@ body {
   z-index: 100;
   border-bottom: 2px solid var(--aged-gold);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+   
 }
 
 .navbar a {
@@ -66,6 +69,7 @@ body {
   width: 0;
   height: 2px;
   background: beige;
+  
 }
 
 .navbar a:hover::before {
@@ -78,16 +82,21 @@ body {
 }
 
 .imgs {
+  display: flex;
   width: 28%;
   position: absolute;
   right: 0;
   top: 20%;
   padding: 20px;
-  background-color: rgba(43, 75, 111, 0.2);
   border-left: 2px solid var(--aged-gold);
   height: 100%;
-  overflow-y: auto;
-  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+  gap: 200px;
+
+  
+  
+  
+  
 }
 
 .imgs img {
@@ -97,6 +106,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
+  
 }
 
 .imgs img:hover {
