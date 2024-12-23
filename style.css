@@ -173,7 +173,7 @@ button:hover {
     background-color: rgba(0, 2, 128, 0.1);
     border: 1px solid var(--aged-gold);
     width: 300px;
-    height: 230px;display: block;
+    height: 230px;
     display: inline-block;
     border-radius: 10px;
     padding: 15px 25px;
@@ -187,7 +187,6 @@ button:hover {
     box-shadow: 0 0 15px rgba(197, 165, 114, 0.2);
     text-decoration: none;
     color: inherit;
-    display: block;
 }
 .card1{
     background-image: url(image/capsa.jpg);
@@ -465,8 +464,4 @@ h5{
 .title, .logo, h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-
-:target {
-    scroll-margin-top: 80px;
 }
